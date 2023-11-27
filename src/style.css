@@ -190,9 +190,9 @@ ul {
   border-radius: 50%;
 }
 .intro-img img {
-  width: 100%;
+  width: 80%;
   object-fit: cover;
-  height: 600px;
+  height: 400px;
   border-radius: 50%;
 }
 #about,
