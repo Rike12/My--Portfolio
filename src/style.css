@@ -30,13 +30,17 @@ ul {
   width: 40%;
   justify-content: space-around;
 }
+
+#navbar .logo{
+  color:rgb(202,143,155);
+}
 #navbar li {
   list-style: none;
 }
 #navbar li a {
   text-decoration: none;
   font-size: 23px;
-  color: black;
+  color: rgb(202,143,155);
   font-weight: 300;
 }
 #navbar li a:hover,
@@ -46,7 +50,7 @@ ul {
   content: "";
   height: 2px;
   width: 100%;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #857561;
   transition: 0.3s;
 }
 .harmburger {
@@ -56,7 +60,7 @@ ul {
 .harmburger i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.9s ease-in-out;
-  color: #010e1b;
+  color: rgb(202,143,155);
 }
 
 /* STICKY */
@@ -72,7 +76,7 @@ ul {
   grid-template-rows: (4 1fr);
   padding-top: 90px;
   color: white;
-  background-color: #010e1b;
+  background-color: rgb(202,143,155);
   width: 100%;
 }
 .container > div {
@@ -122,8 +126,7 @@ ul {
 .btn {
   position: relative;
   text-decoration: none;
-  color: purple;
-  background-color: #12d640;
+  color: #f1f1f1;
   font-size: 16px;
   font-weight: 200;
   width: 200px;
@@ -137,13 +140,18 @@ ul {
 .btn a {
   text-decoration: none;
   color: #010e1b;
+  
 }
 
 .btn:hover {
-  background-color: purple;
+  background-color: black;
+  color: #CA8F9B;
+  
+  
 }
 .btn:hover a {
-  color: white;
+  color: rgb(202,143,155);
+  transition: all ease 200ms;
 }
 
 .btny {
@@ -153,7 +161,8 @@ ul {
   margin-top: 10px;
   height: 50px;
   width: 140px;
-  background-color: #12d640;
+
+  
   border-radius: 15px;
   transition: all 1s ease-in-out;
 }
@@ -185,14 +194,15 @@ ul {
 }
 .intro-img {
   /* border: 2px solid white; */
-  height: 600px;
+  height: 500px;
   width: 50%;
   border-radius: 50%;
+  
 }
 .intro-img img {
   width: 100%;
   object-fit: cover;
-  height: 600px;
+  height: 400px;
   border-radius: 50%;
 }
 #about,
@@ -231,7 +241,7 @@ ul {
   font-weight: 600;
   font-size: 33px;
   padding-bottom: 60px;
-  color: #12d640;
+  color: rgb(202,143,155);
   font-family: "Playfair Display", serif;
 }
 .about-title,
@@ -252,7 +262,7 @@ ul {
   left: 50%;
   width: 190px;
   height: 4px;
-  background: #12d640;
+  background: rgb(202,143,155);
   transform: translateX(-50%);
 }
 
@@ -268,7 +278,7 @@ ul {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #12d640;
+  background: rgb(202,143,155);
   transform: translateX(-50%);
 }
 
@@ -301,7 +311,7 @@ ul {
 }
 .skill-pic {
   width: 40%;
-  border: 5px solid #12d640;
+  border: 5px solid rgb(202,143,155);
   height: 300px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -334,7 +344,7 @@ ul {
 }
 
 .content .card .service-icon {
-  color: #12d640;
+  color: rgb(202,143,155);
   font-size: 2em;
   text-align: center;
   transition: transform 0.5s ease;
@@ -349,7 +359,7 @@ ul {
 }
 
 .content .card .info h3 {
-  color: #12d640;
+  color: rgb(202,143,155);
   font-size: 1.2em;
   font-weight: 700;
   margin-bottom: 10px;
@@ -384,10 +394,16 @@ ul {
 .card1 p {
   text-align: center;
   padding-top: 10px;
+  color:#CA8F9B
 }
 .card1 i {
   font-size: 30px;
   padding-top: 10px;
+  
+}
+.card1 a{
+  text-decoration: none;
+  color:#CA8F9B;
 }
 .form {
   min-height: 700px;
@@ -415,7 +431,7 @@ ul {
   font-size: 20px;
 }
 .form-btn {
-  background-color: #12d640;
+  background-color: rgb(202,143,155);
   color: white;
   height: 60px;
   width: 90%;
@@ -423,9 +439,13 @@ ul {
   border-radius: 5px;
 }
 
+.form-btn:hover {
+  background-color: #f1f1f1;
+  color:#CA8F9B
+}
 /* PROJECT  */
 .swiper {
-  background-color: #010e1b;
+  background-color: #CA8F9B;
   padding: 40px 0 !important;
 }
 .swiper-slide {
@@ -438,7 +458,7 @@ ul {
   padding: 10px;
   margin-left: 15px;
   border-radius: 22px;
-  border: 1px solid #12d640;
+  border: 1px solid #f1f1f1;
   color: white;
 }
 .swiper-slide img {
@@ -453,7 +473,7 @@ ul {
   transform: scale(1.15);
 }
 .pagy div {
-  background-color: #12d640;
+  background-color: rgb(202,143,155);
   font-size: 24px;
   cursor: pointer;
 }
@@ -467,7 +487,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 50% !important;
-  color: white !important;
+  color: #010e1b !important;
 }
 .swiper-prev {
   position: absolute;
@@ -479,7 +499,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 50% !important;
-  color: white !important;
+  color: #010e1b !important;
 }
 .pagy {
   position: relative;
@@ -504,7 +524,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #010e1b;
+  background-color: #384149;
   color: #fff;
 }
 .foot-icon i {
@@ -552,7 +572,7 @@ button:hover {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #010e1b;
+    background-color: #CA8F9B;
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -637,7 +657,7 @@ button:hover {
   .intro,
   #skill,
   .swiper {
-    background-color: #010e1b !important;
+    background-color: #CA8F9B !important;
     width: 100% !important;
     overflow-x: hidden;
   }

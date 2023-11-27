@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mutiat is a Passionate Frontend Web Developer from Nigeria.">
+    <title>MUTIAT</title>
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="/src/style.css">
+   <!-- AOS ANIMATION -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/mlogo.png">
+    <!-- FONT AWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Link Swiper's CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+        <div class="logo"><h1>MUTIAT</h1></div>
+    <ul class="nav-menu">
+        <li class="nav-link"><a href="index.html">Home</a> </li>
+        <li class="nav-link"><a href="about.html">About</a> </li>
+        <li class="nav-link"><a href="skills.html">Skills</a> </li>
+        <li class="nav-link"><a href="work.html">Works</a> </li>
+        <li class="nav-link"><a href="contact.html">Contacts</a> </li>
+    </ul>
+    <div class="harmburger">
+        <i class="fa fa-bars"></i>
+    </div>
+</nav>
+
+
+<div class="container">
+    <!-- INTO SECTION -->
+     <div class="intro">
+         <div class="intro-text">
+         <h1>Hi</h1>
+         <h1>I am  <span style="color: #fff;">Mutiat</span></h1>
+         <div id="type">
+             <div id="text"></div><div id="cursor"></div>
+         </div>
+         <!-- <button class="btn" > <a href="see more">See more</a></button> -->
+         <div class="icon">
+             <a href="https://www.linkedin.com/in/mutiat-adepoju" target="_blank"> <i class="fa fa-linkedin"></i></a>
+             <a href="https://twitter.com/mutiat900" target="_blank"><i class="fa fa-twitter"></i></a>  
+            <a href="https://github.com/Rike12"> <i class="fa fa-github" target="_blank"></i></a>
+            <a href="https://riike.hashnode.dev" target="_blank"> <i class="fa fa-hashnode"></i></a>
+         </div>
+         </div>
+         <div class="intro-img">
+             <img src="assets/images/Mutiat_Adepoju.png" alt="">
+         </div>
+     </div>
+     <!-- SECTION ABOUT -->
+     <div id="about">
+         <div class="about-title">
+         <h1>About Me</h1>
+     </div>
+        <div class="about-body">
+         <div class="about-pic" data-aos="fade-right">
+             <lottie-player src="./images/118043-data-analytics-techniques.json" background="transparent"  speed="1"  style="width: 300px; height: 500px;" loop  autoplay></lottie-player>
+         </div>
+         <div class="about-text read" data-aos="zoom-in" >
+             <h2>Hey There! I'm Mutiat</h2>
+             <p>As a passionate web developer, I am excited about the opportunity to contribute 
+                 my skills and enthusiasm to an internship role.  Over the past year, I have actively engaged in diverse projects, collaborating
+                 seamlessly with colleagues during intensive bootcamp training to construct
+                  impactful websites.   
+                 </p>
+                 <div class="loadMore">
+                     <p>I am perpetually open to embracing new knowledge and thrive in a dynamic learning environment. My foundation in soft skills, encompassing collaborative teamwork, leadership, time management, critical thinking, problem-solving, and deadline adherence, reflects my commitment to holistic professional growth.
+ 
+                         My enthusiasm for learning extends to adopting innovative skills and techniques. I derive great satisfaction from collaborative teamwork and have honed these skills throughout my rigorous six-month bootcamp journey, showcasing my ability to adapt and contribute effectively to projects. In the ever-evolving landscape of web development, I am dedicated to continuous improvement and the pursuit of excellence I am enthusiastic about the 
+                       prospect of contributing to and learning from a supportive internship environment. </p>
+                    <p> I enjoy learning new skills and techniques of doing things. I also love working with teams. </p>
+ 
+                         
+                 </div>  
+                 
+             <button class="btn Load"> Read More.....</button>
+         </div>
+     </div>
+     </div>
+     
+    
+     <div class="footer">
+        <footer>
+            <h1>MUTIAT</h1>
+            <div class="foot-icon">
+                <a href="https://linkedin.com/in/mutiat-adepoju"> <i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Rike12" target="_blank"> <i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/mutiat900" target="_blank"> <i class="fa fa-twitter"></i></a>
+            </div>
+           <p> &copy;Mutiat. All rights reserved </p>
+        </footer>
+    
+    </div>
+ 
+     
+     </div>
+
+
+
+
+
+
+<script src="/src/index.js"></script>
+<!-- AOS ANIMATION -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, 
+  });
+</script>
+<!-- lottie file -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<!-- Include the SwiperJS library -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Add the JavaScript code to initialize the swiper -->
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+       <!-- Swiper JS -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+       <script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: '.swiper-prev',
+      prevEl: '.swiper-next',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 5,
+      },
+    },
+  });
+</script>
+</body>
+</html>

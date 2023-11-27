@@ -23,8 +23,10 @@ function myFunction() {
 // List of sentences
 var _CONTENT = [ 
 	"A frontend developer",  
-	"My tech stack includes: HTML, CSS and JavaScript", 
-	"frameworks: Bootstrap, TailwindCSS and React.Js",
+	"My tech stack includes:", 
+	"HTML, CSS and JavaScript", 
+	" Bootstrap, TailwindCSS", 
+	"and React.Js",
 ];
 
 // Current sentence being processed
