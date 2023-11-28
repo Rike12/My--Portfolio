@@ -7,7 +7,7 @@
   /* width: 100%; */
 }
 body {
-  width: 100% !important;
+  max-width: 100% !important;
 }
 button {
   border: none;
@@ -532,8 +532,11 @@ ul {
   text-align: center;
 }
 .resume {
-  margin-top: 60px;
+  margin-top: 60px; 
   text-align: center;
+}
+.resume i{
+  padding-right: 10px;
 }
 .resume button {
   padding-left: 10px;
@@ -672,6 +675,10 @@ button:hover {
   .contact-card > div {
     width: 300px;
   }
+  #service {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media only screen and (max-width: 500px) {
   /* body{
@@ -734,5 +741,9 @@ button:hover {
 @media only screen and (max-width: 300px) {
   .card .card.reveal {
     width: 60%;
+  }
+  #service {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
