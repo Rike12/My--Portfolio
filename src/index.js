@@ -22,11 +22,8 @@ function myFunction() {
 // FOR THE BLINKING EFFECT
 // List of sentences
 var _CONTENT = [ 
-	"A frontend developer",  
-	"My tech stack includes:", 
-	"HTML, CSS and JavaScript", 
-	" Bootstrap, TailwindCSS", 
-	"and React.Js",
+	"A frontend developer and",  
+	" a technical writer.",
 ];
 
 // Current sentence being processed
