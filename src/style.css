@@ -256,6 +256,9 @@ ul {
 .contact-title,
 .pro-title {
   position: relative;
+  justify-content: center;
+  text-align: center;
+  margin-right: 30px;
 }
 .about-title:before,
 .skill-title:before,
@@ -649,6 +652,7 @@ button:hover {
   .about-pic,
   .skill-text {
     margin-bottom: 30px;
+ 
   }
 
   /* SKILLS */
