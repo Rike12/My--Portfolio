@@ -335,7 +335,7 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 20px;
+  margin:25px;
 }
 .content .card {
   background: #fff;
@@ -718,6 +718,7 @@ button:hover {
   }
   .content {
     flex-direction: column;
+    
   }
 
   .swiper-slide {
