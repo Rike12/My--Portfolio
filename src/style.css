@@ -246,7 +246,7 @@ ul {
 #service {
   background-color: white;
   color: black;
-  width: 100%;
+  max-width: 100%;
   padding-left: 40px;
 }
 #about h1,
@@ -280,7 +280,7 @@ ul {
   position: absolute;
   top: 56px;
   left: 50%;
-  width: 190px;
+  max-width: 190px;
   height: 4px;
   background: rgb(202,143,155);
   transform: translateX(-50%);
@@ -345,6 +345,7 @@ ul {
 
 /* SERVICES */
 .content {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -354,7 +355,7 @@ ul {
 }
 .content .card {
   background: #fff;
-  width: 340px;
+  max-width: 340px;
   margin: 15px;
   padding: 25px;
   justify-content: center;
@@ -615,7 +616,7 @@ button:hover {
     gap: 0;
     flex-direction: column;
     background-color: #CA8F9B;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     transition: 0.3s;
     height: 100%;
@@ -685,8 +686,18 @@ button:hover {
   .skill-pic {
     margin-top: 30px;
   }
+  .about-pic{
+    margin-left: 10px;
+  }
   .contact-card > div {
     width: 300px;
+    margin-left: 45px;
+  }
+  .contact{
+    margin-left: 45px;
+  }
+  .swiper{
+  margin-left: 75px;
   }
   #service {
     padding-left: 20px;
@@ -708,6 +719,7 @@ button:hover {
     background-color: #CA8F9B !important;
     width: 100% !important;
     overflow-x: hidden;
+    margin-left: 40px;
   }
   #about {
     padding-left: 40px;
@@ -716,7 +728,7 @@ button:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
-
+ 
   /* INTRO */
   .intro {
     padding-top: 20px;
@@ -735,8 +747,26 @@ button:hover {
   }
   .card.reveal {
     width: 300px;
+    
+   
+  }
+  .section-body{
+    margin-right: 100px;
   }
 
+  .service-body{
+    margin-right: 95px;
+  }
+  .contact-card{
+    margin-right: 65px;
+  }
+  .form{
+    margin-right: 70px;
+  }
+.footer{
+  max-width: 100%;
+  margin-right: 100px;
+}
   /* services */
   .service-body {
     margin: auto;
@@ -759,4 +789,8 @@ button:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .swiper{
+    max-width: 100%;
+  }
+  
 }
