@@ -6,15 +6,20 @@
   font-family: "Poppins", sans-serif;
   /* width: 100%; */
 }
-body {
-width: 100% !important;
+html,body {
+  width: 100% !important;
+  max-width: 100vw;
+  height: 100% !important;
+  min-height: 100vh; 
 }
+
 button {
   border: none;
 }
 
 #navbar {
   width: 100%;
+    max-width: 100vw;;
 }
 nav {
   display: flex;
@@ -28,6 +33,7 @@ nav {
 ul {
   display: flex;
   width: 40%;
+  max-width: 40%;
   justify-content: space-around;
 }
 
@@ -73,12 +79,12 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: (4 1fr);
+  grid-template-rows: 1fr auto;
   padding-top: 90px;
   color: white;
   background-color: rgb(202,143,155);
   max-width: 100%;
-  
+  min-height: 100vh;
 }
 .container > div {
   /* border: 1px solid black; */
@@ -209,7 +215,7 @@ ul {
 
 .intro-img {
   /* border: 2px solid white; */
-  height: 500px;
+  height: 400px;
   width: 50%;
   
   
@@ -436,7 +442,7 @@ ul {
 }
 .contact-card > div {
   height: 200px;
-  width: 400px;
+  width: 300px;
   margin: 10px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -633,187 +639,134 @@ button:hover {
 }
 /* MEDIA QUERIES */
 
-/* Nav bar */
-@media only screen and (max-width: 950px) {
-  body {
-    overflow-x: hidden;
-  }
-  .harmburger {
-    display: block;
-  }
-  .harmburger i {
-    font-size: 37px;
-  }
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #CA8F9B;
-    max-width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    height: 100%;
-    color: white;
-  }
-  .nav-menu {
-    justify-content: space-evenly;
-  }
-  #navbar .nav-menu li a {
-    color: white;
-  }
-  #navbar .nav-menu li {
-    margin: 10px 0;
-  }
-  .nav-menu.active {
-    left: 0;
-  }
-  /* INTRO */
-  .intro {
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  .intro-text {
-    padding-top: 100px;
-  }
-  .intro-img {
-    width: 70%;
-    margin-top: 30px;
-    
-  }
-  .intro-text h1 {
-    font-size: 40px;
-  }
-
-  #text {
-    font-size: 27px;
-  }
-  /* .intro{
-    padding-left: 20px;
-} */
-  /* ABOUT */
-  .about-body {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-  .about-pic,
-  .about-text {
-    width: 90%;
-  }
-  .about-pic,
-  .skill-text {
-    margin-bottom: 30px;
- 
-  }
-
-  /* SKILLS */
-  .skill-body {
-    display: flex;
-    flex-direction: column;
-  }
-  .skill-text,
-  .skill-pic {
-    width: 90%;
-    margin: auto;
-  }
-  .skill-pic {
-    margin-top: 30px;
-  }
-  .about-pic{
-    margin-left: 10px;
-  }
-  .contact-card > div {
-    width: 300px;
-    
-  }
- 
-}
-@media only screen and (max-width: 500px) {
-  /* body{
-    overflow-x: hidden;
-  }  */
-  .container {
-    background-color: white;
-    padding-top: 20px;
-  }
-  
+/* Responsive styles for screens below 768px */
+@media screen and (max-width: 768px) {
+  .container,
   .intro,
-  #skill,
-  .swiper {
-    background-color: #CA8F9B !important;
-    width: 100% !important;
-    overflow-x: hidden;
-    
+  .intro-text,
+  .intro-img,
+  .about-body,
+  .skill-body,
+  .content,
+  .btny {
+
+    flex-direction: column !important;
+    align-items: center !important;
   }
-  footer{
-     background-color: #384149 !important;
-    color: #fff; 
-    width: 100% !important;
-    overflow-x: hidden;
+
+  .intro-text h1,
+  #text {
+    font-size: 40px;
+    line-height: 50px;
   }
-  #about {
-    padding-left: 40px;
-  }
-  #service {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
- 
-  /* INTRO */
-  .intro {
-    padding-top: 20px;
-    padding-bottom: 60px;
-  }
-  .intro h1 {
-    line-height: 90px;
-  }
-  .intro-img img {
-    height: 250px;
-  }
+
   .intro-img {
-    height: 250px;
-    margin: auto;
-    padding-top: 20px;
-  }
-  .card.reveal {
-    width: 300px;
-    
-   
-  }
-  .section-body{
-    margin-right: 100px;
+    width: 80%;
   }
 
-  .service-body{
-    margin-right: 95px;
+  .about-pic,
+  .about-text,
+  .skill-pic,
+  .skill-text {
+    width: 90%;
+    text-align: center;
   }
-  .contact-card{
-    margin-right: 65px;
+
+  .btn,
+  .btno {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 250px;
   }
-  
-.footer{
-  width: 100%;
-  margin-right: 100px;
-}
-  /* services */
-  .service-body {
-    margin: auto;
+
+  .content .card,
+  .project-card {
+    width: 90%;
+    margin: 10px auto;
   }
-  .content {
+
+  .about-body {
     flex-direction: column;
-    
-  }
-  form{
-    margin-right: 60px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
 
-  .swiper-slide {
-    margin: 0;
-    /* width: 400px !important; */
+  .about-title h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
   }
-  
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 20px;
+  }
+
+  .harmburger {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #navbar .logo {
+    font-size: 20px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .contact-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-card {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
+
+/* Extra small screens (under 480px) */
+@media screen and (max-width: 480px) {
+  .intro-text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .intro-img {
+    width: 90%;
+  }
+
+  .btn,
+  .btno {
+    width: 90%;
+    max-width: 220px;
+  }
+
+  .content .card,
+  .project-card {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .about-body {
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin: 5px auto;
+  }
+}
+
+
 
 
