@@ -20,12 +20,6 @@ button {
 #navbar {
     width: 100%;
   }
-  .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -34,14 +28,6 @@ button {
     overflow: hidden;
     background-color: white;
     z-index: 1000;
-  }
-  .nav-menu {
-    display: flex;
-    flex-direction: flex;
-    justify-content: space-between;
-    gap: 10px; 
-    list-style: none;
-    margin-top: 20px;
   }
   ul {
     display: flex;
@@ -731,8 +717,6 @@ button:hover {
   .harmburger i {
     font-size: 37px;
   }
-
-
   .nav-menu {
     position: fixed;
     left: -100%;
